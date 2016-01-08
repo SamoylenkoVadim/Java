@@ -9,14 +9,14 @@ import org.eclipse.swt.widgets.Shell;
 
 public class Game extends Canvas{
 	
-	private final int WIDTH = 600;
+    private final int WIDTH = 600;
     private final int HEIGHT = 600;
-	private final int DELAY = 150;
-	private final int STEP = 30;
+    private final int DELAY = 150;
+    private final int STEP = 30;
 	
-	private int map[][] = new int[WIDTH/STEP][HEIGHT/STEP];
-		
-	private Image Map;
+    private int map[][] = new int[WIDTH/STEP][HEIGHT/STEP];
+	
+    private Image Map;
     private Image Pacman_left;
     private Image Pacman_right;
     private Image Pacman_up;
@@ -34,13 +34,13 @@ public class Game extends Canvas{
     private boolean down = false;
     private boolean inGame = true;
     
-	private Display display;
+    private Display display;
     private Shell shell;
     private Runnable runnable;
 	
 	public Game(Shell shell) {
         
-		super(shell, SWT.DOUBLE_BUFFERED);
+	super(shell, SWT.DOUBLE_BUFFERED);
         this.shell = shell;
         initMap();
         

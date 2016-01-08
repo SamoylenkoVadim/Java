@@ -5,7 +5,7 @@ import org.eclipse.swt.widgets.Shell;
 
 public class Pacman {
 	
-	   	private final int WIDTH = 600;
+	    private final int WIDTH = 600;
 	    private final int HEIGHT = 600;
 
 	    public Pacman(Display display) {
@@ -39,7 +39,7 @@ public class Pacman {
 	public static void main(String[] args) {
 		Display display = new Display();
 		Pacman window = new Pacman(display);
-    display.dispose();
+                display.dispose();
 	}
 
 }
